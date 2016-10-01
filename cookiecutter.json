@@ -1,0 +1,13 @@
+{
+  "package_name": "myapp",
+  "package_classname": "{{ cookiecutter.package_name.title() }}",
+  "project_name": "django-{{ cookiecutter.package_name }}",
+  "github_username": "JTarball",
+  "email": "james.tarball@gmail.com",
+  "author": "James Tarball",
+  "author_special": "{{ cookiecutter.author }} <james.tarball@gmail.com>",
+  "project_short_description": "Reusable, generic app for Django",
+  "project_long_description": "A basic app perfect for something.",
+  "version": "0.1.0",
+  "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
+}
