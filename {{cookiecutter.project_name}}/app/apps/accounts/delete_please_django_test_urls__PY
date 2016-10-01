@@ -24,9 +24,10 @@ def remote_user_auth_view(request):
     """
     Dummy view for remote user tests
     """
-    ## NEED TO REPLACE ## WITH {{ t = Template("Username is ## user }}.")
-    c = RequestContext(request, {})
-    return HttpResponse(t.render(c))
+    pass
+    ## NEED TO REPLACE ## WITH {{ t = Template("Username is ## user .")
+    #c = RequestContext(request, {})
+    #return HttpResponse(t.render(c))
 
 
 def auth_processor_no_attr_access(request):
