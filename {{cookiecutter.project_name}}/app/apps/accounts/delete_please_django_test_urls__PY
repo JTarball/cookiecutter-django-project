@@ -25,7 +25,7 @@
 #     Dummy view for remote user tests
 #     """
 #     pass
-#     ## NEED TO REPLACE ## WITH {{ t = Template("Username is ## user .")
+#     ## NEED TO REPLACE ## WITH ## t = Template("Username is ## user .")
 #     #c = RequestContext(request, {})
 #     #return HttpResponse(t.render(c))
 
