@@ -9,6 +9,7 @@
 {{ cookiecutter.project_long_description }}
 
 
+The documentation can be found at (once deployed): https://{{ cookiecutter.github_username }}.github.io/{{ cookiecutter.project_name }}/ 
 
 [![Circle CI](https://circleci.com/gh/JTarball/codewheel-backend.svg?style=svg)](https://circleci.com/gh/JTarball/codewheel-backend)
 
