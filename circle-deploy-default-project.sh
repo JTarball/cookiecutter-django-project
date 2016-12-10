@@ -8,13 +8,13 @@ set -e
 # show where we are on the machine
 pwd
 
-remote=git@github.com:{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}.git
+remote=git@github.com:JTarball/django-myproject.git
 
-cd {{ cookiecutter.project_name }}
+cd django-myproject
 
 # now lets setup a new repo so we can update the master branch
-git config --global user.email "{{ cookiecutter.email }}" > /dev/null 2>&1
-git config --global user.name "{{ cookiecutter.github_username }}" > /dev/null 2>&1
+git config --global user.email "james.tarball@gmail.com" > /dev/null 2>&1
+git config --global user.name "JTarball" > /dev/null 2>&1
 git init
 git remote add --fetch origin "$remote"
 
@@ -36,5 +36,5 @@ git commit --allow-empty -m "Deploy to Default Django Page for `git log -1 --pre
 # and push, but send any output to /dev/null to hide anything sensitive
 git push --force origin master
 
-echo "Finished Deployment of files to https://{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}/ !"
+echo "Finished Deployment of files to https://JTarball/django-myproject/ !"
 
