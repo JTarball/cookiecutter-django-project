@@ -1,0 +1,25 @@
+#####
+# Circle CI
+# 
+# For running docker images on circle ci, see: https://circleci.com/docs/docker
+# For circle.yml explanation, see: https://circleci.com/docs/manually
+# Python specific configuration, see: https://circleci.com/docs/language-python
+#####
+
+# Basic test of cookiecutter deployment - basic django project test & building of documentation
+
+dependencies:
+    pre:
+        - pip install cookiecutter
+        - pip install sphinx
+        - yes "" | cookiecutter https://github.com/JTarball/cookiecutter-django-project
+        - cd django-myproject && pip install -r requirements.txt
+
+# test:
+#     override:
+#       - cd django-myapp && python setup.py install
+#       - cd django-myapp/docs && make html coverage
+#       - mkdir -p django-myapp/circle-junit/django
+#       - cd django-myapp && py.test --cov --cov-report html:$CIRCLE_TEST_REPORTS --junitxml=circle-junit/django/junit.xml tests/
+#       - mkdir -p $CIRCLE_TEST_REPORTS/django
+#       - mv django-myapp/circle-junit/django $CIRCLE_TEST_REPORTS/
