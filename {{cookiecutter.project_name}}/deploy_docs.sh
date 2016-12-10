@@ -11,7 +11,7 @@ set -e
 # show where we are on the machine
 pwd
 
-remote=git@github.com:JTarball/django-myapp.git
+remote=git@github.com:{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}.git
 
 siteSource="$1"
 
