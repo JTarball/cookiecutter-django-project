@@ -7,7 +7,7 @@
   "author": "James Tarball",
   "author_special": "{{ cookiecutter.author }} <james.tarball@gmail.com>",
   "project_short_description": "Reusable, generic project for Django",
-  "project_long_description": "A basic django project perfect for something.",
+  "project_long_description": "A basic default django project perfect for something.",
   "version": "0.1.0",
   "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
 }
