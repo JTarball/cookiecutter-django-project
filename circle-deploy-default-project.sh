@@ -18,17 +18,6 @@ git config --global user.name "JTarball" > /dev/null 2>&1
 git init
 git remote add --fetch origin "$remote"
 
-# switch into the the master branch
-if git rev-parse --verify origin/master > /dev/null 2>&1
-then
-    git checkout master
-    # delete any old site as we are going to replace it
-    # Note: this explodes if there aren't any, so moving it here for now
-    git rm -rf .
-else
-    git checkout --orphan master
-fi
-
 # stage any changes and new files
 git add -A
 # now commit, ignoring branch gh-pages doesn't seem to work, so trying skip
