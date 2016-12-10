@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+"""
+
+"""
 from django.views.generic import TemplateView
 from django.conf.urls import patterns, url
 
