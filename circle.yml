@@ -28,4 +28,4 @@ deployment:
   production:
     branch: master
     commands:
-      - cd django-myproject && ./deploy_docs.sh /docs/build/html
+      - cd django-myproject && ./deploy_docs.sh docs/build/html
