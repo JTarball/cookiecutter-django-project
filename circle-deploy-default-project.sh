@@ -21,9 +21,9 @@ git remote add --fetch origin "$remote"
 # stage any changes and new files
 git add -A
 # now commit, ignoring branch gh-pages doesn't seem to work, so trying skip
-git commit --allow-empty -m "Deploy to Default Django Page for `git log -1 --pretty=short --abbrev-commit`"
+git commit --allow-empty -m "Auto-deploy to default Django page `git log -1 --pretty=short --abbrev-commit`"
 # and push, but send any output to /dev/null to hide anything sensitive
 git push --force origin master
 
-echo "Finished Deployment of files to https://JTarball/django-myproject/ !"
+echo "Finished Deployment of files to https://JTarball/django-myproject/"
 
